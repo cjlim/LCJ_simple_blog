@@ -1,0 +1,5 @@
+**/node_modules/*
+project-c-service/webapp/packages/slickgrid/lib/client/classes/**/*
+project-c-service/webapp/packages/common-ui/lib/client/materialize-override/**/*
+project-c-service/webapp/packages/common-leaflet/lib/client/proj4-compressed.js
+project-c-service/webapp/packages/common-leaflet/lib/client/proj4leaflet.js
