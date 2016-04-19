@@ -1,0 +1,87 @@
+/**
+ * 제작 : 임채주, shine5311@adain.kr
+ * 날짜 : 2016. 4. 19.
+ * 내용 : layout
+**/
+
+@import "./_mixins.scss";
+
+/*
+===============================================================================
+ * body min-width, min-height
+===============================================================================
+*/
+
+*{
+  min-height: 0;
+}
+
+/*
+===============================================================================
+ * flex layout
+===============================================================================
+*/
+.layout-flex{
+  @include layout-flex();
+}
+
+/**
+*  layout direction
+*/
+.layout-flex.horizontal{
+  -webkit-box-orient: horizontal;
+  flex-direction: row;
+}
+.layout-flex.vertical{
+  -webkit-box-orient: vertical;
+  flex-direction: column;
+}
+.layout-flex.vertical-center{
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.layout-flex.height100{
+  height: 100%;
+}
+.layout-flex.width100{
+  width: 100%;
+}
+
+/**
+*  layout flex item
+*/
+.layout-item{
+  position: relative;
+  white-space: normal;
+}
+.layout-item.flex,.c-layout-item.flex-1{
+  @include layout-item-flex(1);
+}
+.layout-item.flex-2{
+  @include layout-item-flex(2);
+}
+.layout-item.flex-3{
+  @include layout-item-flex(3);
+}
+.layout-item.flex-4{
+  @include layout-item-flex(4);
+}
+.layout-item.flex-5{
+  @include layout-item-flex(5);
+}
+.layout-item.flex-6{
+  @include layout-item-flex(6);
+}
+.layout-item.overflow-y-auto{
+  overflow-y: auto;
+}
+// 영역 초기화
+.layout-fit{
+  position: absolute !important;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
