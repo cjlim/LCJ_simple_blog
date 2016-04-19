@@ -1,17 +1,15 @@
 <body>
   <div class="wrap">
-    <header class="header-box">
-      <nav class="navbar navbar-default navbar-fixed-top">
-        header
-      </nav>
-    </header>
+    {{> header}}
+
     <div class="main-content-box">
-      <div class="content-box">
-        contents <br>
+      <div class="content-box layout-fit">
+        <div class="container" style="height: 100%;">
+
+          {{> postList}}
+
+        </div>
       </div>
-      <footer class="footer-box">
-        footer
-      </footer>
     </div>
   </div>
 </body>

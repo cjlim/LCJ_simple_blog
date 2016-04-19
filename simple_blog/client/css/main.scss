@@ -10,6 +10,14 @@
 @import '{reywood:bootstrap3-sass}/bootstrap';
 @import './_layout.scss';
 
+/* var */
+$primary-color: #30A388;
+$primary-color-light: #69CAB3;
+$primary-color-light-light: #ABE8D9;
+$primary-color-dark: #033D30;
+
+$secondary-color: #D98F23;
+
 
 /* reset */
 html, body{
@@ -41,6 +49,7 @@ body{
   width: 100%;
   height: 100%;
   min-height: 100%;
+  background: url("/images/bg_pattern.png") 0 0 repeat;
 }
 
 // header
@@ -51,20 +60,59 @@ $header-top-padding : 50px;
 
   .navbar{
     height: $header-top-padding;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    background-color: $primary-color-light;
+    border-bottom: 0;
   }
-}
 
-// content
-.main-content-box{
-  padding-top: $header-top-padding;
-  width: 100%;
-  height: 100%;
-  min-height: 100%;
-  box-sizing: border-box;
+  .navbar-brand{
+    color: #fff;
+
+    &.center{
+      position: absolute;
+      float: none;
+      margin: 0;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+  }
+
+  #login-buttons{
+    .login-link-text{
+      text-decoration: none;
+      color: #fff;
+    }
+  }
 }
 
 // footer
 .footer-box{
   width: 100%;
   height: 50px;
+}
+
+// content
+.main-content-box{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  box-sizing: border-box;
+
+  .content-box{
+    margin-top: $header-top-padding;
+  }
+}
+
+/* posts list */
+.posts-list-box{
+  background-color: rgba(175,175,175,.1);
+  height: 100%;
+  padding: 20px 30px;
+
+  li{
+    padding: 20px 0;
+    border-bottom: 1px solid $primary-color;
+  }
 }
