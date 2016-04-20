@@ -1,4 +1,5 @@
-<body>
+
+<template name="blogLayout">
   <div class="wrap">
     {{> header}}
 
@@ -6,10 +7,10 @@
       <div class="content-box layout-fit">
         <div class="container" style="height: 100%;">
 
-          {{> postList}}
+          {{> Template.dynamic template=main}}
 
         </div>
       </div>
     </div>
   </div>
-</body>
+</template>
