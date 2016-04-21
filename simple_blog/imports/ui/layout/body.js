@@ -2,8 +2,6 @@
 import './body.html';
 import './header.html';
 
-import '../../api/commonJS.js';
-
 import '../components/post_list.html';
 import '../components/post_list.js';
 import '../components/post_list_item.html';
