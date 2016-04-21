@@ -79,9 +79,19 @@ $header-top-padding : 50px;
   }
 
   #login-buttons{
+    height: $header-top-padding;
+    line-height: $header-top-padding;
+    vertical-align: middle;
+
     .login-link-text{
       text-decoration: none;
       color: #fff;
+    }
+
+    .login-close-text{
+      line-height: 1;
+      font-size: 13px;
+      padding-top: 5px;
     }
   }
 }

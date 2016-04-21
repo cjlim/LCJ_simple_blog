@@ -4,5 +4,11 @@
   description : post list item
 -->
 <template name="postListItem">
-  <li>{{text}}</li>
+  <li>
+    <h4>{{title}}</h4>
+    <p>{{username}}</p>
+
+    <a href="/post/{{_id}}">read more</a>
+
+  </li>
 </template>

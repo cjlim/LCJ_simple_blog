@@ -1,0 +1,18 @@
+<!--
+  author : chae-joo Lim <shine5311@adain.kr>
+  date : 2016. 4. 20.
+  description : post write
+-->
+<template name="postView">
+
+  <a href="/">Back</a>
+  {{#if Template.subscriptionsReady}}
+    {{#with post}}
+      <h3>{{title}} {{date}}</h3>
+      <p>{{content}}</p>
+    {{/with}}
+  {{else}}
+    <p>Loading...</p>
+  {{/if}}
+
+</template>
