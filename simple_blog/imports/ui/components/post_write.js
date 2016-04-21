@@ -18,16 +18,8 @@ Template.postWrite.events({
 
     console.log(Meteor.user());
 
-    // Insert a task into the collection
-    
-    Posts.insert({
-      title,
-      content,
-      owner: Meteor.userId(),
-      username: Meteor.user().username,
-      createdAt: new Date(), // current time
-    });
-    
+    // Insert a post into the collection
+    Meteor.call('posts.insert', title, content);
 
     // Clear form
     target.postTitle.value = '';

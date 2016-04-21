@@ -31,9 +31,32 @@ Template.postView.helpers({
     var day = post.createdAt.getDate();
     
     return month + '. ' + day + '. ' + year;
+  },
+
+  isOwner: function() {
+    return this.owner === Meteor.userId();
   }
 });
 Template.postView.events({
+  'click .btn-post-delete'() {
+    var self = this;
+
+    BootstrapModalPrompt.prompt({
+      title: "Post 삭제",
+      content: "정말로 삭제 하시겠습니까?"
+    }, function(result) {
+      if (result) {
+        // User confirmed it, so go do something.
+        Meteor.call('posts.remove', self._id);
+
+        FlowRouter.go("/");
+      }
+      else {
+        // User did not confirm, do nothing.
+        return;
+      }
+    });
+  }
 });
 
 

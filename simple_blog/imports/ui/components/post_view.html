@@ -10,6 +10,10 @@
     {{#with post}}
       <h3>{{title}} {{date}}</h3>
       <p>{{content}}</p>
+
+      {{#if isOwner}}
+      <button class="btn btn-primary btn-post-delete">삭제</button>
+      {{/if}}
     {{/with}}
   {{else}}
     <p>Loading...</p>

@@ -57,6 +57,7 @@
         <item url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.9/web.browser/minifier.js" />
         <item url="file://$USER_HOME$/.meteor/packages/underscore/1.0.8/web.browser/pre.js" />
         <item url="file://$USER_HOME$/.meteor/packages/html-tools/1.0.9/web.browser/scanner.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/theduke_bootstrap-modal-prompt/0.0.2/web.browser/packages/theduke:bootstrap-modal-prompt.js" />
         <item url="file://$USER_HOME$/.meteor/packages/underscore/1.0.8/web.browser/post.js" />
         <item url="file://$USER_HOME$/.meteor/packages/html-tools/1.0.9/web.browser/templatetag.js" />
         <item url="file://$USER_HOME$/.meteor/packages/html-tools/1.0.9/web.browser/tokenize.js" />
@@ -247,6 +248,7 @@
       <root url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.9/web.browser/minifier.js" />
       <root url="file://$USER_HOME$/.meteor/packages/underscore/1.0.8/web.browser/pre.js" />
       <root url="file://$USER_HOME$/.meteor/packages/html-tools/1.0.9/web.browser/scanner.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/theduke_bootstrap-modal-prompt/0.0.2/web.browser/packages/theduke:bootstrap-modal-prompt.js" />
       <root url="file://$USER_HOME$/.meteor/packages/underscore/1.0.8/web.browser/post.js" />
       <root url="file://$USER_HOME$/.meteor/packages/html-tools/1.0.9/web.browser/templatetag.js" />
       <root url="file://$USER_HOME$/.meteor/packages/html-tools/1.0.9/web.browser/tokenize.js" />
