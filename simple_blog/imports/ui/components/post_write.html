@@ -5,17 +5,20 @@
 -->
 <template name="postWrite">
 
-  <div class="posts-write-box ">
-    <form class="new-post">
-      <div class="form-group">
-        <label for="postTitle">포스트 제목</label>
+  <div class="posts-write-box">
+    <form class="new-post layout-fit layout-flex vertical">
+      <h2>포스트 작성</h2>
+      <div class="form-group layout-item">
+        <label class="hidden" for="postTitle">포스트 제목</label>
         <input type="text" name="postTitle" class="form-control" id="postTitle" placeholder="제목을 입력하세요">
       </div>
-      <div class="form-group">
+      <div class="form-group layout-item flex">
         <div id="summernote"></div>
       </div>
 
-      <button class="btn btn-primary" type="submit">확인</button>
+      <div class="btn-box layout-item">
+        <button class="btn btn-primary" type="submit">확인</button>
+      </div>
     </form>
   </div>
 

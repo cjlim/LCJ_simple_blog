@@ -56,7 +56,7 @@
   position: relative;
   white-space: normal;
 }
-.layout-item.flex,.c-layout-item.flex-1{
+.layout-item.flex,.layout-item.flex-1{
   @include layout-item-flex(1);
 }
 .layout-item.flex-2{

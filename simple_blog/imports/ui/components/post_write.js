@@ -9,16 +9,16 @@ Template.postWrite.onCreated(function() {
 
 Template.postWrite.onRendered(function() {
   this.$('#summernote').summernote({
-    height: 300,                 // set editor height
-    minHeight: null,             // set minimum height of editor
-    maxHeight: null              // set maximum height of editor
+    height: 480,                 // set editor height
+    minHeight: 300,             // set minimum height of editor
+    maxHeight: 480              // set maximum height of editor
   });
 
   this.$('.dropdown-toggle').dropdown()
 });
 
 Template.postWrite.onDestroyed(function() {
-  //this.$('#summernote').summernote('destroy');
+  this.$('#summernote').summernote('destroy');
 });
 
 Template.postWrite.events({
