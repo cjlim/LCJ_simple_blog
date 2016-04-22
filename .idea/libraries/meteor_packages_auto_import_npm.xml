@@ -2,22 +2,22 @@
   <library name="meteor-packages-auto-import-npm" type="javaScript">
     <properties>
       <sourceFilesUrls>
-        <item url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.9/npm/node_modules/uglify-js/bin/extract-props.js" />
-        <item url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.9/npm/node_modules/uglify-js/lib/propmangle.js" />
-        <item url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.9/npm/node_modules/uglify-js/lib/scope.js" />
-        <item url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.9/npm/node_modules/uglify-js/lib/sourcemap.js" />
-        <item url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.9/npm/node_modules/uglify-js/lib/ast.js" />
-        <item url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.9/npm/node_modules/uglify-js/lib/utils.js" />
-        <item url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.9/npm/node_modules/uglify-js/lib/mozilla-ast.js" />
-        <item url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.9/npm/node_modules/uglify-js/lib/output.js" />
-        <item url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.9/npm/node_modules/uglify-js/lib/compress.js" />
-        <item url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.9/npm/node_modules/uglify-js/lib/transform.js" />
-        <item url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.9/npm/node_modules/uglify-js/lib/parse.js" />
-        <item url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.9/npm/node_modules/uglify-js/tools/node.js" />
-        <item url="file://$USER_HOME$/.meteor/packages/modules-runtime/0.6.1/npm/node_modules/install/install.min.js" />
-        <item url="file://$USER_HOME$/.meteor/packages/modules-runtime/0.6.1/npm/node_modules/install/install.js" />
-        <item url="file://$USER_HOME$/.meteor/packages/modules-runtime/0.6.1/npm/node_modules/install/docs/docco.css" />
-        <item url="file://$USER_HOME$/.meteor/packages/modules-runtime/0.6.1/npm/node_modules/install/docs/public/stylesheets/normalize.css" />
+        <item url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.11/npm/node_modules/uglify-js/bin/extract-props.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.11/npm/node_modules/uglify-js/lib/propmangle.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.11/npm/node_modules/uglify-js/lib/scope.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.11/npm/node_modules/uglify-js/lib/sourcemap.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.11/npm/node_modules/uglify-js/lib/ast.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.11/npm/node_modules/uglify-js/lib/utils.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.11/npm/node_modules/uglify-js/lib/mozilla-ast.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.11/npm/node_modules/uglify-js/lib/output.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.11/npm/node_modules/uglify-js/lib/compress.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.11/npm/node_modules/uglify-js/lib/transform.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.11/npm/node_modules/uglify-js/lib/parse.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.11/npm/node_modules/uglify-js/tools/node.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/modules-runtime/0.6.3/npm/node_modules/install/install.min.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/modules-runtime/0.6.3/npm/node_modules/install/install.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/modules-runtime/0.6.3/npm/node_modules/install/docs/docco.css" />
+        <item url="file://$USER_HOME$/.meteor/packages/modules-runtime/0.6.3/npm/node_modules/install/docs/public/stylesheets/normalize.css" />
         <item url="file://$USER_HOME$/.meteor/packages/babel-compiler/6.6.4/npm/node_modules/meteor-babel/register.js" />
         <item url="file://$USER_HOME$/.meteor/packages/babel-compiler/6.6.4/npm/node_modules/meteor-babel/index.js" />
         <item url="file://$USER_HOME$/.meteor/packages/babel-compiler/6.6.4/npm/node_modules/meteor-babel/util.js" />
@@ -3714,22 +3714,22 @@
       </sourceFilesUrls>
     </properties>
     <CLASSES>
-      <root url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.9/npm/node_modules/uglify-js/bin/extract-props.js" />
-      <root url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.9/npm/node_modules/uglify-js/lib/propmangle.js" />
-      <root url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.9/npm/node_modules/uglify-js/lib/scope.js" />
-      <root url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.9/npm/node_modules/uglify-js/lib/sourcemap.js" />
-      <root url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.9/npm/node_modules/uglify-js/lib/ast.js" />
-      <root url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.9/npm/node_modules/uglify-js/lib/utils.js" />
-      <root url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.9/npm/node_modules/uglify-js/lib/mozilla-ast.js" />
-      <root url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.9/npm/node_modules/uglify-js/lib/output.js" />
-      <root url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.9/npm/node_modules/uglify-js/lib/compress.js" />
-      <root url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.9/npm/node_modules/uglify-js/lib/transform.js" />
-      <root url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.9/npm/node_modules/uglify-js/lib/parse.js" />
-      <root url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.9/npm/node_modules/uglify-js/tools/node.js" />
-      <root url="file://$USER_HOME$/.meteor/packages/modules-runtime/0.6.1/npm/node_modules/install/install.min.js" />
-      <root url="file://$USER_HOME$/.meteor/packages/modules-runtime/0.6.1/npm/node_modules/install/install.js" />
-      <root url="file://$USER_HOME$/.meteor/packages/modules-runtime/0.6.1/npm/node_modules/install/docs/docco.css" />
-      <root url="file://$USER_HOME$/.meteor/packages/modules-runtime/0.6.1/npm/node_modules/install/docs/public/stylesheets/normalize.css" />
+      <root url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.11/npm/node_modules/uglify-js/bin/extract-props.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.11/npm/node_modules/uglify-js/lib/propmangle.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.11/npm/node_modules/uglify-js/lib/scope.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.11/npm/node_modules/uglify-js/lib/sourcemap.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.11/npm/node_modules/uglify-js/lib/ast.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.11/npm/node_modules/uglify-js/lib/utils.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.11/npm/node_modules/uglify-js/lib/mozilla-ast.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.11/npm/node_modules/uglify-js/lib/output.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.11/npm/node_modules/uglify-js/lib/compress.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.11/npm/node_modules/uglify-js/lib/transform.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.11/npm/node_modules/uglify-js/lib/parse.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/minifier-js/1.1.11/npm/node_modules/uglify-js/tools/node.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/modules-runtime/0.6.3/npm/node_modules/install/install.min.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/modules-runtime/0.6.3/npm/node_modules/install/install.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/modules-runtime/0.6.3/npm/node_modules/install/docs/docco.css" />
+      <root url="file://$USER_HOME$/.meteor/packages/modules-runtime/0.6.3/npm/node_modules/install/docs/public/stylesheets/normalize.css" />
       <root url="file://$USER_HOME$/.meteor/packages/babel-compiler/6.6.4/npm/node_modules/meteor-babel/register.js" />
       <root url="file://$USER_HOME$/.meteor/packages/babel-compiler/6.6.4/npm/node_modules/meteor-babel/index.js" />
       <root url="file://$USER_HOME$/.meteor/packages/babel-compiler/6.6.4/npm/node_modules/meteor-babel/util.js" />

@@ -9,7 +9,7 @@
   {{#if Template.subscriptionsReady}}
     {{#with post}}
       <h3>{{title}} {{date}}</h3>
-      <p>{{content}}</p>
+      <div class="inner-view-box">{{{content}}}</div>
 
       {{#if isOwner}}
       <button class="btn btn-primary btn-post-delete">삭제</button>

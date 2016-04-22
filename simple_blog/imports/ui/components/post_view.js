@@ -8,27 +8,30 @@ import './post_view.html';
 Template.postView.onCreated(function() {
   var self = this;
   self.postId = null;
+  self.post = null;
+  self.contents = null;
+});
+
+Template.postView.onRendered(function() {
+  var self = this;
 
   self.autorun(function() {
     self.postId = FlowRouter.getParam('postId');
     self.subscribe('singlePost', self.postId);
+
+    self.post = Posts.findOne({_id: self.postId}) || {};
   });
 });
 
 Template.postView.helpers({
   post: function() {
-    var postId = Template.instance().postId;
-    var post = Posts.findOne({_id: postId}) || {};
-    return post;
+    return Template.instance().post;
   },
 
   date: function() {
-    var postId = Template.instance().postId;
-    var post = Posts.findOne({_id: postId});
-    
-    var year = post.createdAt.getFullYear();
-    var month = post.createdAt.getMonth() + 1;
-    var day = post.createdAt.getDate();
+    var year = Template.instance().post.createdAt.getFullYear();
+    var month = Template.instance().post.createdAt.getMonth() + 1;
+    var day = Template.instance().post.createdAt.getDate();
     
     return month + '. ' + day + '. ' + year;
   },

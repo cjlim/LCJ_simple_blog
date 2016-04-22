@@ -56,6 +56,7 @@ modules@0.6.1
 modules-runtime@0.6.3
 mongo@1.1.7
 mongo-id@1.0.4
+natestrauser:font-awesome@4.6.1
 npm-bcrypt@0.8.5
 npm-mongo@1.4.43
 observe-sequence@1.0.11
@@ -77,10 +78,12 @@ spacebars-compiler@1.0.11
 srp@1.0.8
 standard-minifier-css@1.0.6
 standard-minifier-js@1.0.6
+summernote:summernote@0.8.1
 templating@1.1.9
 templating-tools@1.0.4
 theduke:bootstrap-modal-prompt@0.0.2
 tracker@1.0.13
+twbs:bootstrap@3.3.6
 ui@1.0.11
 underscore@1.0.8
 url@1.0.9
