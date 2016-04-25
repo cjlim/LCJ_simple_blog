@@ -24,7 +24,6 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 fourseven:scss
 reywood:bootstrap3-sass
 francocatena:compass
-theduke:bootstrap-modal-prompt
 
 reactive-dict
 
@@ -37,3 +36,4 @@ kadira:flow-router
 natestrauser:font-awesome
 summernote:summernote
 
+theduke:bootstrap-modal-prompt

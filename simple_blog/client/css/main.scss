@@ -28,6 +28,7 @@ html, body{
 
 body{
   font-family: 'Nanum Gothic', sans-serif;
+  background: url("/images/bg_pattern.png") 0 0 repeat;
 }
 
 /* visible hidden */
@@ -49,7 +50,6 @@ body{
   width: 100%;
   height: 100%;
   min-height: 100%;
-  background: url("/images/bg_pattern.png") 0 0 repeat;
 }
 
 // header
@@ -117,13 +117,14 @@ $header-top-padding : 50px;
 
 /* posts list */
 .posts-list-box{
-  background-color: rgba(175,175,175,.1);
   height: 100%;
-  padding: 20px 30px;
+  padding: 20px 0;
 
   li{
-    padding: 20px 0;
-    border-bottom: 1px solid $primary-color;
+    background-color: rgba(175,175,175,.1);
+    padding: 20px 30px;
+    margin-bottom: 15px;
+    border-radius: 5px;
   }
 }
 

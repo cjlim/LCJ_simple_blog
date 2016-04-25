@@ -8,7 +8,6 @@ import './post_list_item.html';
 
 Template.postList.helpers({
   tasks() {
-    console.log(Posts.find().fetch())
     return Posts.find({}, { sort: { createdAt: -1 } });
   },
 });

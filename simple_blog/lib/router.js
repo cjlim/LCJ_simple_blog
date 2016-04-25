@@ -33,7 +33,6 @@ FlowRouter.route('/post_write/:postId', {
 
 FlowRouter.route('/post/:postId', {
   action: function(params) {
-    console.log(params)
     BlazeLayout.render("blogLayout", {
       main: "postView",
       params: params

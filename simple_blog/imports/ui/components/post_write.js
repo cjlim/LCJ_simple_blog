@@ -15,9 +15,9 @@ Template.postWrite.onRendered(function() {
   const self = this;
 
   self.$('#summernote').summernote({
-    height: 480,                 // set editor height
-    minHeight: 300,             // set minimum height of editor
-    maxHeight: 480              // set maximum height of editor
+    height: 300,                 // set editor height
+    minHeight: 150,             // set minimum height of editor
+    maxHeight: 600              // set maximum height of editor
   });
 
   self.$('.dropdown-toggle').dropdown();
@@ -57,16 +57,61 @@ Template.postWrite.events({
     const title = target.postTitle.value;
     const content = t.$('#summernote').summernote('code');
 
-    // Insert a post into the collection
-    Meteor.call('posts.insert', title, content, function(err){
-      if(!err){
-        // Clear form
-        target.postTitle.value = '';
-        t.$('#summernote').summernote('code', '');
+    // title과 content가 빈 값이면 경고
+    if(!title || content === '<p><br></p>' || !content){
 
-        FlowRouter.go("/")
+      if(!title){
+        BootstrapModalPrompt.prompt({
+          title: "Alert",
+          content: "제목을 입력 해 주시기 바랍니다."
+        }, function(result) {
+          if (result) {
+            t.$("#postTitle").focus();
+            return;
+          } else {
+            t.$("#postTitle").focus();
+            return;
+          }
+        });
+      } else {
+        BootstrapModalPrompt.prompt({
+          title: "Alert",
+          content: "내용을 입력 해 주시기 바랍니다."
+        }, function(result) {
+          if (result) {
+            return;
+          } else {
+            return;
+          }
+        });
       }
-    });
+    } else {
+
+      if(t.postId){
+        // Modify a post into the collection
+        Meteor.call('posts.modify', t.postId, title, content, function(err){
+          if(!err){
+            // Clear form
+            target.postTitle.value = '';
+            t.$('#summernote').summernote('code', '');
+
+            // 뷰페이지로 돌아감.
+            FlowRouter.go("/post/" + t.postId);
+          }
+        });
+      } else {
+        // Insert a post into the collection
+        Meteor.call('posts.insert', title, content, function(err){
+          if(!err){
+            // Clear form
+            target.postTitle.value = '';
+            t.$('#summernote').summernote('code', '');
+
+            FlowRouter.go("/");
+          }
+        });
+      }
+    }
   },
 });
 

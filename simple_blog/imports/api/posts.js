@@ -32,6 +32,25 @@ Meteor.methods({
       createdAt: new Date(), // current time
     });
   },
+
+  'posts.modify'(postId, title, content) {
+    check(postId, String);
+    check(title, String);
+
+    // Make sure the user is logged in before inserting a task
+    if (! Meteor.userId()) {
+      throw new Meteor.Error('not-authorized');
+    }
+
+    Posts.update(postId, {
+      $set: {
+        title: title,
+        content : content,
+        modifyAt: new Date(), // current time
+      },
+    });
+  },
+
   'posts.remove'(postId) {
     check(postId, String);
 
