@@ -59,7 +59,13 @@ Template.postView.events({
         return;
       }
     });
+  },
+  'click .btn-post-modify'(){
+    //post_write 페이이로 이동
+    // this data도 같이 보냄
+    FlowRouter.go("/post_write/" + this._id);
   }
+
 });
 
 

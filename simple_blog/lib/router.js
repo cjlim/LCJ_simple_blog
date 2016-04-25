@@ -18,6 +18,19 @@ FlowRouter.route('/post_write', {
 });
 
 
+FlowRouter.route('/post_write/:postId', {
+  action: function(params) {
+    if(!Meteor.user()){
+      FlowRouter.go("/");
+    }
+    BlazeLayout.render('blogLayout', {
+      main: "postWrite",
+      params: params
+    });
+  }
+});
+
+
 FlowRouter.route('/post/:postId', {
   action: function(params) {
     console.log(params)
