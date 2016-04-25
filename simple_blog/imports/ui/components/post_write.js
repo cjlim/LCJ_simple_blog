@@ -2,10 +2,13 @@
 import { Meteor } from 'meteor/meteor';
 import { Template } from 'meteor/templating';
 
+import { Posts } from '../../api/posts.js';
+
 import './post_write.html';
 
 Template.postWrite.onCreated(function() {
   this.postId = null;
+  this.post = null;
 });
 
 Template.postWrite.onRendered(function() {
@@ -26,10 +29,14 @@ Template.postWrite.onRendered(function() {
     self.postId = context.params.postId;
 
     if(self.postId){
-      console.log(this)
+      self.post = Posts.findOne({_id: self.postId}) || {};
+      let title = self.post.title;
+      let content = self.post.content;
       // postId 값이 있으면 post data를 불러옴
       // 제목 필드에 값을 넣어줌
       // 내용 필드에 값을 넣어줌
+      self.$("#postTitle").val(title)
+      self.$('#summernote').summernote('code', content);
     }
   });
 });
@@ -49,8 +56,6 @@ Template.postWrite.events({
     const target = event.target;
     const title = target.postTitle.value;
     const content = t.$('#summernote').summernote('code');
-
-    console.log(typeof(content));
 
     // Insert a post into the collection
     Meteor.call('posts.insert', title, content, function(err){
