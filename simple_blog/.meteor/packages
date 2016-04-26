@@ -26,6 +26,7 @@ reywood:bootstrap3-sass
 francocatena:compass
 
 reactive-dict
+underscore
 
 accounts-ui
 accounts-password

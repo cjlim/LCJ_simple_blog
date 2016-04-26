@@ -3,6 +3,7 @@ import { Template } from 'meteor/templating';
 
 import './body.html';
 import './header.html';
+import './header.js';
 
 import '../components/post_list.html';
 import '../components/post_list.js';
