@@ -101,13 +101,14 @@ Template.postWrite.events({
         });
       } else {
         // Insert a post into the collection
-        Meteor.call('posts.insert', title, content, function(err){
+        Meteor.call('posts.insert', title, content, function(err, r){
           if(!err){
+
             // Clear form
             target.postTitle.value = '';
             t.$('#summernote').summernote('code', '');
 
-            FlowRouter.go("/");
+            FlowRouter.go("/post/" + r);
           }
         });
       }

@@ -24,13 +24,15 @@ Meteor.methods({
       throw new Meteor.Error('not-authorized');
     }
 
-    Posts.insert({
+    var newPost = Posts.insert({
       title,
       content,
       owner: Meteor.userId(),
       username: Meteor.user().username,
       createdAt: new Date(), // current time
     });
+
+    return newPost;
   },
 
   'posts.modify'(postId, title, content) {
