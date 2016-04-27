@@ -4,11 +4,24 @@
   description : post list item
 -->
 <template name="postListItem">
-  <li>
-    <h4>{{title}}</h4>
-    <p>{{username}} {{date}}</p>
+  <li class="post-list">
 
-    <a href="/post/{{_id}}">read more</a>
+
+    {{#if hasSrc}}
+    <div class="media-left">
+      <a href="/post/{{_id}}" class="thumbnail">
+        <img class="media-object" src="{{hasSrc}}" alt="...">
+      </a>
+    </div>
+    {{/if}}
+
+    <div class="media-body">
+      <p class="date">{{date}}</p>
+      <h4 class="title"><a href="/post/{{_id}}">{{title}}</a></h4>
+      <p class="user">{{username}}</p>
+
+      <a href="/post/{{_id}}">read more</a>
+    </div>
 
   </li>
 </template>
