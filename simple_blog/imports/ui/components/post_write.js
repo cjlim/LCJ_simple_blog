@@ -1,6 +1,7 @@
 
 import { Meteor } from 'meteor/meteor';
 import { Template } from 'meteor/templating';
+import { ReactiveDict } from 'meteor/reactive-dict';
 
 import { Posts } from '../../api/posts.js';
 
@@ -9,6 +10,7 @@ import './post_write.html';
 Template.postWrite.onCreated(function() {
   this.postId = null;
   this.post = null;
+  this.state = new ReactiveDict();
 });
 
 Template.postWrite.onRendered(function() {
@@ -27,6 +29,7 @@ Template.postWrite.onRendered(function() {
     var context = FlowRouter.current();
 
     self.postId = context.params.postId;
+    self.state.set("currentPostId", self.postId);
 
     if(self.postId){
       self.post = Posts.findOne({_id: self.postId}) || {};
@@ -45,6 +48,12 @@ Template.postWrite.onDestroyed(function() {
   this.$('#summernote').summernote('destroy');
 
   this.postId = null;
+});
+
+Template.postWrite.helpers({
+  isModify: function(){
+    return Template.instance().state.get("currentPostId");
+  }
 });
 
 Template.postWrite.events({

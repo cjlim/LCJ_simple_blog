@@ -17,7 +17,13 @@
       </div>
 
       <div class="btn-box layout-item">
+        {{#if isModify}}
+        <a class="btn btn-default" href="/post/{{isModify}}">취소</a>
+        <button class="btn btn-primary" type="submit">수정</button>
+        {{else}}
+        <a class="btn btn-default" href="/">취소</a>
         <button class="btn btn-primary" type="submit">확인</button>
+        {{/if}}
       </div>
     </form>
   </div>

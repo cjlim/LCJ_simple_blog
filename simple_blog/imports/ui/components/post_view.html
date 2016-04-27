@@ -5,18 +5,20 @@
 -->
 <template name="postView">
 
-  <a href="/">Back</a>
   {{#if Template.subscriptionsReady}}
     {{#with post}}
-      <h3>{{title}} {{date}}</h3>
-      <div class="inner-view-box">{{{content}}}</div>
+      <div class="post-view-box">
+        <h3>{{title}} {{date}}</h3>
+        <div class="inner-view-box">{{{content}}}</div>
 
-      {{#if isOwner}}
-      <button class="btn btn-primary btn-post-delete">삭제</button>
-      <button class="btn btn-primary btn-post-modify">수정</button>
-        <!--
-      <a href="/post_write/{{_id}}" class="btn btn-primary btn-post-modify">수정</a>-->
-      {{/if}}
+        <div class="btn-box">
+          <a href="/" class="btn btn-primary">목록</a>
+          {{#if isOwner}}
+          <button class="btn btn-warning btn-post-modify">수정</button>
+          <button class="btn btn-danger btn-post-delete">삭제</button>
+          {{/if}}
+        </div>
+      </div>
     {{/with}}
   {{else}}
     <p>Loading...</p>

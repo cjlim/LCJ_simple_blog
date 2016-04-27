@@ -7,6 +7,8 @@ Template.postListItem.onCreated(function() {
 });
 
 Template.postListItem.onRendered(function() {
+  const data = this.data;
+  console.log(data);
 });
 
 Template.postListItem.helpers({

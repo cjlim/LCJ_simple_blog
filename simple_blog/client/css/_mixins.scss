@@ -25,3 +25,42 @@
   -ms-flex: $i;              /* IE 10 */
   flex: $i;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
+
+
+/*
+===============================================================================
+ * responsive mediaquery
+===============================================================================
+*/
+// responsive mediaquery (mobile first)
+// device-xs(mobile)    ~ 767px
+// device-sm(tablet-s)  768 ~ 991px
+// device-md(tablet-l)  992 ~ 1199px
+// device-lg(web)       1200px ~
+
+$device-sm: 768px;
+$device-md: 992px;
+$device-lg: 1200px;
+
+@mixin responsive($width){
+  @if $width == device-xs {
+    @media only screen and (max-width: $device-sm - 1) {
+      @content
+    }
+  }
+  @if $width == device-sm {
+    @media only screen and (min-width: $device-sm) {
+      @content
+    }
+  }
+  @if $width == device-md {
+    @media only screen and (min-width: $device-md) {
+      @content
+    }
+  }
+  @if $width == device-lg {
+    @media only screen and (min-width: $device-lg) {
+      @content
+    }
+  }
+}
