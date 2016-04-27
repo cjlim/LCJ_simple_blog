@@ -8,7 +8,8 @@
   {{#if Template.subscriptionsReady}}
     {{#with post}}
       <div class="post-view-box">
-        <h3>{{title}} {{date}}</h3>
+        <h3>{{title}}</h3>
+        <p class="info">작성자 : {{username}} | 작성일자 : {{date}}</p>
         <div class="inner-view-box">{{{content}}}</div>
 
         <div class="btn-box">
