@@ -45,6 +45,26 @@ body{
   overflow: hidden;
 }
 
+/* text-overflow set */
+.toe{
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal
+}
+.toe,
+x:-moz-any-link,
+x:default {
+  white-space: nowrap;
+  word-wrap: break-word
+} /* Firefox 에서 줄 바꿈이 가능하도록 변경 */
+*+html .toe{
+  white-space: nowrap;
+  word-wrap: normal
+} /* 위 행이 IE7에도 적용되므로 IE7에만 줄 바꿈이 불가능하도록 다시 복원 */
+
 /* layout */
 .wrap{
   width: 100%;
@@ -78,6 +98,12 @@ $header-top-padding : 50px;
     }
   }
 
+  .login-box{
+    display: block;
+    float: right !important;
+    margin-right: 0;
+  }
+
   #login-buttons{
     height: $header-top-padding;
     line-height: $header-top-padding;
@@ -92,6 +118,75 @@ $header-top-padding : 50px;
       line-height: 1;
       font-size: 13px;
       padding-top: 5px;
+    }
+  }
+
+  .search-wrap{
+    position: absolute;
+    display: none;
+    width: 100%;
+    top: 50px;
+    left: 0;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+    @include responsive(device-sm){
+      position: relative;
+      display: block !important;
+      width: auto;
+      top: auto;
+      left: auto;
+      padding: 0;
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
+
+  .navbar-form{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+
+    button{
+      display: inline-block;
+      float: right;
+      width: 18%;
+    }
+
+    @include responsive(device-sm){
+      width: auto;
+      margin-top: 8px;
+      margin-bottom: 8px;
+      padding: 0 15px;
+
+      button{
+        float: none;
+        width: auto;
+      }
+    }
+  }
+
+  .form-group{
+    width: 80%;
+    float: left;
+
+    @include responsive(device-sm){
+      width: auto;
+      float: none;
+    }
+  }
+
+  .btn-show-search{
+    display: block;
+    float: right !important;
+    margin-right: 0;
+
+    @include responsive(device-sm){
+      display: none;
+      margin-right: -15px;
     }
   }
 }
@@ -151,11 +246,18 @@ $header-top-padding : 50px;
     box-sizing: border-box;
   }
 
-  .media-body{
-    padding-left: 10px;
+  .list-left{
+    display: block;
+    margin-right: 20px;
+  }
+
+  .list-body{
+    width: 100%;
 
     h4{
+      width: 100%;
       a{
+        width: 100%;
         color: #333;
         font-size: 20px;
       }

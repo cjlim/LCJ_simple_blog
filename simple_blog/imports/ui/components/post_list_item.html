@@ -4,20 +4,19 @@
   description : post list item
 -->
 <template name="postListItem">
-  <li class="post-list">
-
+  <li class="post-list layout-flex">
 
     {{#if hasSrc}}
-    <div class="media-left">
+    <div class="list-left layout-item">
       <a href="/post/{{_id}}" class="thumbnail">
-        <img class="media-object" src="{{hasSrc}}" alt="...">
+        <img class="media-object" src="{{hasSrc}}" alt="{{title}}">
       </a>
     </div>
     {{/if}}
 
-    <div class="media-body">
+    <div class="list-body layout-item flex">
       <p class="date">{{date}}</p>
-      <h4 class="title"><a href="/post/{{_id}}">{{title}}</a></h4>
+      <h4 class="title"><a class="toe" href="/post/{{_id}}">{{title}}</a></h4>
       <p class="user">{{username}}</p>
 
       <a href="/post/{{_id}}">read more</a>

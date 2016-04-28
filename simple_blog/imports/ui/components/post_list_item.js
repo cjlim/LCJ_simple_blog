@@ -14,6 +14,8 @@ Template.postListItem.onRendered(function() {
   const data = this.data;
   let imgIndex = data.content.indexOf("<img");
 
+  //let liveText = data.content.replace(/(<([^>]+)>)/gi, "");
+
   // content에서 img가 있는지 체크
   // 있으면 이미지의 src 값을 가져옴.
   // src 값을 넣고 helper로 넣어줌.
