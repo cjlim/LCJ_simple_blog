@@ -190,6 +190,39 @@ $header-top-padding : 50px;
     }
   }
 }
+// sing-in
+.btn-sign-in-wrap{
+  height: $header-top-padding;
+  line-height: $header-top-padding;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 0.2px;
+
+  a{
+    color: #fff;
+    cursor: pointer;
+  }
+  a:hover{
+    text-decoration: none;
+  }
+}
+
+//sign-in-wrap
+.sign-in-wrap{
+
+  .btn-box{
+    padding-top: 10px;
+    width: 100%;
+    text-align: right;
+  }
+
+  .btn-sign-in,
+  .btn-sign-up{
+    display: block;
+    padding-top: 10px;
+    cursor: pointer;
+  }
+}
 
 // footer
 .footer-box{

@@ -5,6 +5,8 @@
 -->
 <template name="header">
 
+  {{> signInModal}}
+
   <header class="header-box">
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -17,7 +19,15 @@
         <button class="btn btn-default navbar-btn btn-show-search" style="margin-left: 10px"><i class="fa fa-search" aria-hidden="true"></i></button>
 
         <div class="navbar-right login-box">
-          {{> loginButtons}}
+          <div class="btn-sign-in-wrap">
+            <a class="btn-signIn" data-toggle="modal">
+              {{#if currentUser}}
+                {{currentUser.username}} ▾
+              {{else}}
+                Sign in ▾
+              {{/if}}
+            </a>
+          </div>
 
           {{#if currentUser}}
           <a href="/post_write" class="btn btn-default navbar-btn" style="margin-left: 10px">글쓰기</a>

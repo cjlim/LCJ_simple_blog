@@ -13,6 +13,10 @@ if (Meteor.isServer) {
   Meteor.publish('posts', function postsPublication() {
     return Posts.find();
   });
+
+  Meteor.publish('user', function() {
+    return Meteor.users.find();
+  });
 }
 
 Meteor.methods({

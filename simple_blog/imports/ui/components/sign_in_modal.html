@@ -1,0 +1,79 @@
+<!--
+  author : chae-joo Lim <shine5311@adain.kr>
+  date : 2016. 4. 20.
+  description : post list
+-->
+<template name="signInModal">
+
+  <div class="modal fade in" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">
+            {{#if currentUser}}
+              Setting
+            {{else}}
+              {{signInText}}
+            {{/if}}
+          </h4>
+        </div>
+        <div class="modal-body sign-in-wrap">
+        {{#if currentUser}}
+          <a class="btn btn-primary logout" style="width: 100%;">Logout</a>
+        {{else}}
+          {{#if signIn}}
+
+            <form id="formSignIn">
+              <div class="form-group">
+                <label for="signInInputEmail">이메일 주소</label>
+                <input type="email" class="form-control" name="signInInputEmail" id="signInInputEmail" placeholder="이메일을 입력하세요">
+              </div>
+              <div class="form-group">
+                <label for="signInInputPassword">비밀 번호</label>
+                <input type="password" class="form-control" name="signInInputPassword" id="signInInputPassword" placeholder="비밀 번호">
+              </div>
+              <div class="btn-box">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+              </div>
+            </form>
+
+            {{#if withoutUser}}
+            <a class="btn-sign-up">회원가입</a>
+            {{/if}}
+
+          {{else}}
+
+            <form id="formSignUp">
+              <div class="form-group">
+                <label for="signUpInputEmail">이메일 주소</label>
+                <input type="email" class="form-control" name="signUpInputEmail" id="signUpInputEmail" placeholder="이메일을 입력하세요">
+              </div>
+              <div class="form-group">
+                <label for="signUpInputUsername">이름</label>
+                <input type="text" class="form-control" name="signUpInputUsername" id="signUpInputUsername" placeholder="이름을 입력하세요">
+              </div>
+              <div class="form-group">
+                <label for="signUpInputPassword">비밀 번호</label>
+                <input type="password" class="form-control" name="signUpInputPassword" id="signUpInputPassword" placeholder="비밀 번호">
+              </div>
+              <div class="form-group">
+                <label for="signUpInputPasswordConfirm">비밀 번호 (확인)</label>
+                <input type="password" class="form-control" name="signUpInputPasswordConfirm" id="signUpInputPasswordConfirm" placeholder="비밀 번호 확인">
+              </div>
+              <div class="btn-box">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+              </div>
+            </form>
+
+            <a class="btn-sign-in">로그인</a>
+          {{/if}}
+        {{/if}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+</template>
