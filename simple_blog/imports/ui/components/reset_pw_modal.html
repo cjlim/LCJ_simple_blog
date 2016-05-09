@@ -1,0 +1,40 @@
+<!--
+  author : chae-joo Lim <shine5311@adain.kr>
+  date : 2016. 4. 20.
+  description : reset password
+-->
+<template name="resetPwModal">
+
+  <div class="modal fade in" id="resetPwModal" tabindex="-1" role="dialog" aria-labelledby="resetPwModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Reset password</h4>
+        </div>
+        <form id="resetPassword">
+        <div class="modal-body sign-in-wrap">
+          <div class="form-group">
+            <label for="resetOldPassword">기존 비밀 번호</label>
+            <input type="password" class="form-control" name="resetOldPassword" id="resetOldPassword" placeholder="비밀 번호">
+          </div>
+          <div class="form-group">
+            <label for="resetNewPassword">새 비밀 번호</label>
+            <input type="password" class="form-control" name="resetNewPassword" id="resetNewPassword" placeholder="비밀 번호">
+          </div>
+          <div class="form-group">
+            <label for="resetNewPasswordConfirm">새 비밀 번호 (확인)</label>
+            <input type="password" class="form-control" name="resetNewPasswordConfirm" id="resetNewPasswordConfirm" placeholder="비밀 번호 확인">
+          </div>
+          <p class="error-test"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">OK</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</template>

@@ -20,6 +20,7 @@
         </div>
         <div class="modal-body sign-in-wrap">
         {{#if currentUser}}
+          <a class="btn btn-primary reset-password" data-dismiss="modal" data-toggle="modal" style="width: 100%;margin-bottom: 10px">Reset Password</a>
           <a class="btn btn-primary logout" style="width: 100%;">Logout</a>
         {{else}}
           {{#if signIn}}

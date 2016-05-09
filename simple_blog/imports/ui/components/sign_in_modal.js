@@ -6,6 +6,9 @@ import { Accounts } from 'meteor/accounts-base';
 
 import './sign_in_modal.html';
 
+import './reset_pw_modal.html';
+import './reset_pw_modal.js';
+
 Template.signInModal.onCreated(function() {
   this.isSignIn = new ReactiveDict();
   this.hasUser = new ReactiveDict();
@@ -107,6 +110,12 @@ Template.signInModal.events({
     t.$('#signInModal').modal('hide');
     Meteor.logout();
     t.isSignIn.set("isSignInSection", true);
+  },
+
+  'click .reset-password'(e, t){
+    e.preventDefault();
+
+    $('#resetPwModal').modal();
   }
 });
 
